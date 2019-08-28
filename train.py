@@ -30,8 +30,8 @@ if __name__ == "__main__":
     parser.add_argument('--dataset', type=str, required=True)
     parser.add_argument('--min_freq', type=int, default=1)
     parser.add_argument('--max_vocab_size', type=int, default=1e9)
-    parser.add_argument('--test_mode', action="store_true")
     parser.add_argument('--context_length', type=int, default=6)
+    parser.add_argument('--test_mode', action="store_true")
     
     # model
     parser.add_argument('--model_variant', type=str, default=2)
