@@ -15,10 +15,12 @@ The model is largely based on [The Annotated Transformer](http://nlp.seas.harvar
 ## Citing
 If you find this repo useful, please cite
 ```
-@inproceedings{zhong2019knowledge,
-    title={Knowledge-Enriched Transformer for Emotion Detection in Textual Conversations},
-    author={Peixiang, Zhong and Di, Wang and Chunyan, Miao},
-    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
-    year={2019}
+@inproceedings{zhong-etal-2019-knowledge,
+    title = "Knowledge-Enriched Transformer for Emotion Detection in Textual Conversations",
+    author = "Zhong, Peixiang and Wang, Di and Miao, Chunyan",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    year = "2019",
+    publisher = "Association for Computational Linguistics",
+    pages = "165--176"
 }
 ```
