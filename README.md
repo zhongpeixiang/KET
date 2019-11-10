@@ -1,4 +1,4 @@
-The PyTorch code for paper: Knowledge-Enriched Transformer for Emotion Detection in Textual Conversations
+The PyTorch code for paper: Knowledge-Enriched Transformer for Emotion Detection in Textual Conversations ([pdf](https://www.aclweb.org/anthology/D19-1016/))
 
 The model is largely based on [The Annotated Transformer](http://nlp.seas.harvard.edu/2018/04/03/attention.html)
 
@@ -13,9 +13,9 @@ The model is largely based on [The Annotated Transformer](http://nlp.seas.harvar
 - Model evaluation: run `train.py` with `test_mode` set.
 
 ## Citing
-If you find this repo useful, please cite
+If you find this repo or paper useful, please cite
 ```
-@inproceedings{zhong-etal-2019-knowledge,
+@inproceedings{zhong2019knowledge,
     title = "Knowledge-Enriched Transformer for Emotion Detection in Textual Conversations",
     author = "Zhong, Peixiang and Wang, Di and Miao, Chunyan",
     booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
