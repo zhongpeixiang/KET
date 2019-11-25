@@ -164,6 +164,36 @@ def create_examples_EmoryNLP(split):
         examples.append(utterances)
     return examples
 
+"""
+# Regarding producing data.pkl for IEMOCAP:
+# The exact code for preprocessing IEMOCAP raw to data.pkl is left somewhere in my older server
+# The following code is not gurrenteed to work and just intended to give some clues.
+
+dataset = pickle.load(open("./data/IEMOCAP/IEMOCAP_features_raw.pkl", 'rb'), encoding='latin1')
+# randomly select validation sessions
+train_ids = list(dataset[7])
+val_ids = []
+num_vals = 20
+
+while len(set(val_ids)) < num_vals:
+    random_id = random.choice(train_ids)
+    val_ids.append(random_id)
+val_ids = list(set(val_ids))
+train_ids = list(set(train_ids) - set(val_ids))
+test_ids = list(dataset[8])
+
+new_dataset = []
+new_dataset.append(dataset[1]) # speaker
+new_dataset.append(dataset[6]) # utterances
+new_dataset.append(dataset[2]) # label
+new_dataset.append(train_ids) 
+new_dataset.append(val_ids)
+new_dataset.append(test_ids)
+    
+# save new dataset
+with open("./data/IEMOCAP/data.pkl", "wb") as f:
+pickle.dump(new_dataset, f)
+"""
 
 def create_examples_IEMOCAP(split):
     dataset = pickle.load(open("./data/IEMOCAP/data.pkl", 'rb'))
